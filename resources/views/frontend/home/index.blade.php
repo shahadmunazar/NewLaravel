@@ -1,0 +1,13 @@
+@extends('frontend.layouts.main')
+@section('title', 'Home Page')
+@section('content')
+    @include('frontend.home.allHomepages.crousels')
+    @include('frontend.home.allHomepages.about')
+    @include('frontend.home.allHomepages.shortsfeatures')
+    @include('frontend.home.allHomepages.Features')
+    @include('frontend.home.allHomepages.appointment')
+    @include('frontend.home.allHomepages.teams')
+    @include('frontend.home.allHomepages.Service')
+    @include('frontend.home.allHomepages.testimonial')
+    @include('frontend.home.allHomepages.Newsletter')
+@endsection

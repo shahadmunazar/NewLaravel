@@ -2,7 +2,7 @@
         <div class="container py-3">
             <div class="d-flex align-items-center">
                 <a href="/">
-                    <h2 class="text-white fw-bold m-0">WELDORK</h2>
+                    <h2 class="text-white fw-bold m-0">TC SMART</h2>
                 </a>
                 <div class="ms-auto d-flex align-items-center">
                     <small class="ms-4"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</small>

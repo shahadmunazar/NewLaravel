@@ -32,6 +32,14 @@ Route::prefix('products')->group(function () {
 // Services
 Route::prefix('services')->group(function () {
     // Embedded Software Development Services
+
+    // Top-level service category routes
+Route::get('/embedded-systems', [HomeController::class, 'embeddedSystems'])->name('services.embedded_systems');
+Route::get('/industrial-automation', [HomeController::class, 'industrialAutomation'])->name('services.industrial_automation');
+Route::get('/software-development', [HomeController::class, 'softwareDevelopment'])->name('services.software_development');
+Route::get('/hvac-solutions', [HomeController::class, 'hvacSolutions'])->name('services.hvac_solutions');
+
+
     Route::get('embedded-software/firmware-development', [HomeController::class, 'firmware_development'])->name('services.embedded_software.firmware_development');
     Route::get('embedded-software/linux-driver-development', [HomeController::class, 'linux_driver_development'])->name('services.embedded_software.linux_driver_development');
     Route::get('embedded-software/ux-ui-development', [HomeController::class, 'ux_ui_development'])->name('services.embedded_software.ux_ui_development');

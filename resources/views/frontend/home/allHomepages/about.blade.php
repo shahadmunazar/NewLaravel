@@ -10,11 +10,8 @@
 
             <!-- About Text Section -->
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                <h1 class="display-6 text-uppercase mb-4">Ultimate Welding and Quality Metal Solutions</h1>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue,
-                    iaculis id elit eget, ultrices pulvinar tortor. Quisque vel lorem porttitor, malesuada arcu
-                    quis, fringilla risus. Pellentesque eu consequat augue.</p>
-
+                <h1 class="display-6 text-uppercase mb-4">Welcome to TC Smart Technology</h1>
+                <p class="mb-4">TC Smart Technology is a leading embedded systems and automation solution provider specializing in end-to-end embedded projects, IoT solutions, and medical equipment R&D. From PCB design and power electronics to secure circuitry and automatic project testing, we deliver robust, scalable, and innovative embedded solutions tailored to your needs.</p>
                 <div class="row g-5 mb-4">
                     <!-- Certified Expert & Team -->
                     <div class="col-sm-6">
@@ -44,7 +41,7 @@
 
                 <!-- Border Box with Heading -->
                 <div class="border border-5 border-primary p-4 text-center mt-4">
-                    <h4 class="lh-base text-uppercase mb-0">We’re Good in All Metal Works Using Quality Welding Tools</h4>
+                    <h4 class="lh-base text-uppercase mb-0">Our goal is to simplify your operations, enhance efficiency, and drive digital transformation across industries.</h4>
                 </div>
             </div>
         </div>

@@ -11,8 +11,12 @@
         margin-top: -1px;
         z-index: 1000;
     }
+    .dropdown-submenu > .dropdown-item {
+    cursor: pointer;
+}
 
-    .dropdown-submenu.show .dropdown-menu {
+
+    .dropdown-submenu.show > .dropdown-menu {
         display: block;
     }
 
@@ -22,12 +26,6 @@
         margin-right: 5px;
     }
 
-    /* Don't use hover to show submenu anymore */
-    /* .nav-item.dropdown:hover > .dropdown-menu {
-        display: block;
-    } */
-
-    /* Optional: force dropdown to behave only on click */
     .dropdown-menu {
         transition: none !important;
     }
@@ -47,94 +45,58 @@
                 <div class="navbar-nav">
                     <a href="{{ route('home.index') }}" class="nav-item nav-link {{ request()->routeIs('home.index') ? 'active' : '' }}">Home</a>
                     <a href="{{ route('about_us.index') }}" class="nav-item nav-link {{ request()->routeIs('about_us.index') ? 'active' : '' }}">About</a>
-                    <a href="{{ route('services.index') }}" class="nav-item nav-link {{ request()->routeIs('services.index') ? 'active' : '' }}">Services</a>
+                    {{-- <a href="{{ route('services.index') }}" class="nav-item nav-link {{ request()->routeIs('services.index') ? 'active' : '' }}">Services</a> --}}
 
-                    <!-- Products Dropdown -->
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Our Services</a>
                         <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
 
-                            <!-- Category 1: Datchik IOT Product -->
+                            <!-- Embedded Systems Solutions -->
                             <div class="dropdown-submenu">
-    <a href="#" class="dropdown-item dropdown-toggle">TC IOT Product</a>
-    <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="{{ route('products.iot.customized_gas_detector') }}">Customized Gas Detector</a></li>
-    </ul>
-</div>
-
-                            <!-- Category 2: Datchik Smart Solution -->
-                            <div class="dropdown-submenu" id="smart-solution-products">
-                                <a class="dropdown-item dropdown-toggle" href="#">TC Smart Solution</a>
+<a class="dropdown-item dropdown-toggle" href="{{ route('services.embedded_systems') }}">Embedded Systems Solutions</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="{{ route('products.smart_solution.smart_watch') }}">Smart Watch</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('products.smart_solution.datchik_game') }}">Datchik Game</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('services.embedded_software.firmware_development') }}">Embedded hardware and firmware design</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('services.embedded_software.linux_driver_development') }}">PCB layout and power electronics engineering</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('services.embedded_software.ux_ui_development') }}">Secure circuit design and embedded cybersecurity</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('services.embedded_software.ux_ui_development') }}">IoT device integration and cloud connectivity</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('services.embedded_software.ux_ui_development') }}">Medical device R&D and compliance consulting</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('services.embedded_software.ux_ui_development') }}">Automated testing frameworks during the development cycle</a></li>
                                 </ul>
                             </div>
 
-                            <!-- Category 3: Datchik Biomedical Product -->
-                            <div class="dropdown-submenu" id="biomedical-products">
-                                <a class="dropdown-item dropdown-toggle" href="#">TC Biomedical Product</a>
+                            <!-- Industrial Automation & Robotics Solutions -->
+                            <div class="dropdown-submenu">
+<a class="dropdown-item dropdown-toggle" href="{{ route('services.industrial_automation') }}">Industrial Automation & Robotics Solutions</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="{{ route('products.biomedical.orthopaedic_heat_pad') }}">Orthopaedic Heat Pad Kit</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('products.biomedical.electric_body_massager') }}">Electric Body Massager</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('services.embedded_hardware.circuit_designing') }}">Welding robots, pick-and-place robots, and stack-making robots</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('services.embedded_hardware.pcb_designing') }}">Conveyor systems and robotic arms</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('services.embedded_hardware.mounting_pcb') }}">Custom Special Purpose Machines (SPM)</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('services.embedded_hardware.mounting_pcb') }}">Factory digitization and intelligent production lines</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('services.embedded_hardware.mounting_pcb') }}">Real-time monitoring, PLC programming, and SCADA integration</a></li>
                                 </ul>
                             </div>
 
-                            <!-- Category 4: Datchik Lighting Product -->
-                            <div class="dropdown-submenu" id="lighting-products">
-                                <a class="dropdown-item dropdown-toggle" href="#">TC Lighting Product</a>
+                            <!-- Software Development Solutions -->
+                            <div class="dropdown-submenu">
+<a class="dropdown-item dropdown-toggle" href="{{ route('services.software_development') }}">Software Development Solutions</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="{{ route('products.lighting.led_light') }}">LED Light</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('products.lighting.concealed_light') }}">Concealed Light</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('products.lighting.tube_light') }}">Tube Light</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('products.lighting.panel_light') }}">Panel Light</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('services.biomedical.orthopaedic_heat_pad') }}">School, college, and hospital management systems</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('services.biomedical.electric_body_massager') }}">E-commerce and CRM platforms</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('services.biomedical.electric_body_massager') }}">Manufacturing traceability and quality control software</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('services.biomedical.electric_body_massager') }}">Android apps and full-stack web development</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('services.biomedical.electric_body_massager') }}">Cloud-based dashboards, APIs, and IoT apps</a></li>
                                 </ul>
                             </div>
 
-                        </div>
-                    </div>
-
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
-                        <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
-
-                            <!-- Category 1: Embedded Software Development Services -->
-                            <div class="dropdown-submenu" id="software-services">
-                                <a class="dropdown-item dropdown-toggle" href="#">Embedded Software Development Services</a>
+                            <!-- HVAC System Solutions -->
+                            <div class="dropdown-submenu">
+<a class="dropdown-item dropdown-toggle" href="{{ route('services.hvac_solutions') }}">HVAC System Solutions</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="{{ route('services.embedded_software.firmware_development') }}">Firmware Development</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('services.embedded_software.linux_driver_development') }}">Linux Based Driver Development</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('services.embedded_software.ux_ui_development') }}">UX and UI Development</a></li>
-                                </ul>
-                            </div>
-
-                            <!-- Category 2: Embedded Hardware Development Services -->
-                            <div class="dropdown-submenu" id="hardware-services">
-                                <a class="dropdown-item dropdown-toggle" href="#">Embedded Hardware Development Services</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="{{ route('services.embedded_hardware.circuit_designing') }}">Circuit Designing</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('services.embedded_hardware.pcb_designing') }}">PCB Designing & Layouting</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('services.embedded_hardware.mounting_pcb') }}">Mounting of PCB (SMD and SMT Assembly and disassembly)</a></li>
-                                </ul>
-                            </div>
-
-                            <!-- Category 3: Datchik Biomedical Services -->
-                            <div class="dropdown-submenu" id="biomedical-services">
-                                <a class="dropdown-item dropdown-toggle" href="#">TC Biomedical Product</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="{{ route('services.biomedical.orthopaedic_heat_pad') }}">Orthopaedic Heat Pad Kit</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('services.biomedical.electric_body_massager') }}">Electric Body Massager</a></li>
-                                </ul>
-                            </div>
-
-                            <!-- Category 4: Datchik Lighting Product -->
-                            <div class="dropdown-submenu" id="lighting-services">
-                                <a class="dropdown-item dropdown-toggle" href="#">TC Lighting Product</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="{{ route('services.lighting.led_light') }}">LED Light</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('services.lighting.concealed_light') }}">Concealed Light</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('services.lighting.tube_light') }}">Tube Light</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('services.lighting.panel_light') }}">Panel Light</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('services.lighting.led_light') }}">Centralized HVAC design, supply, and installation</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('services.lighting.concealed_light') }}">Split AC systems with Annual Maintenance Contracts (AMC)</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('services.lighting.tube_light') }}">Smart climate control systems</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('services.lighting.panel_light') }}">IAQ enhancement and energy recovery ventilation</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('services.lighting.panel_light') }}">System optimization, load calculation, and 24/7 emergency support</a></li>
                                 </ul>
                             </div>
 
@@ -152,39 +114,50 @@
     </div>
 </div>
 
-
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     const submenuToggles = document.querySelectorAll('.dropdown-submenu > .dropdown-item.dropdown-toggle');
 
     submenuToggles.forEach(toggle => {
+        let clickTimer;
+
         toggle.addEventListener('click', function (e) {
-            e.preventDefault();
+            e.preventDefault(); // Always prevent single-click default
+
             const parent = toggle.parentElement;
             const submenu = parent.querySelector('.dropdown-menu');
 
-            // Hide all other submenus first
-            document.querySelectorAll('.dropdown-submenu').forEach(submenuItem => {
-                if (submenuItem !== parent) {
-                    submenuItem.classList.remove('show');
-                    const sub = submenuItem.querySelector('.dropdown-menu');
-                    if (sub) sub.style.display = 'none';
-                }
-            });
-
-            // Toggle this submenu
-            const isVisible = submenu.style.display === 'block';
-            if (isVisible) {
-                submenu.style.display = 'none';
-                parent.classList.remove('show');
-            } else {
-                submenu.style.display = 'block';
-                parent.classList.add('show');
+            // Handle double click (navigate)
+            if (clickTimer) {
+                clearTimeout(clickTimer);
+                clickTimer = null;
+                window.location.href = toggle.getAttribute('href'); // Go to actual page
+                return;
             }
+
+            // First click: show submenu
+            clickTimer = setTimeout(() => {
+                clickTimer = null;
+
+                // Hide others
+                document.querySelectorAll('.dropdown-submenu').forEach(item => {
+                    if (item !== parent) {
+                        item.classList.remove('show');
+                        const inner = item.querySelector('.dropdown-menu');
+                        if (inner) inner.style.display = 'none';
+                    }
+                });
+
+                // Toggle submenu
+                const isVisible = submenu && submenu.style.display === 'block';
+                submenu.style.display = isVisible ? 'none' : 'block';
+                parent.classList.toggle('show', !isVisible);
+
+            }, 250); // Wait to detect double-click
         });
     });
 
-    // Reset all submenus when the main dropdown is closed
+    // Reset submenus when parent dropdown closes
     document.querySelectorAll('.nav-item.dropdown').forEach(dropdown => {
         dropdown.addEventListener('hidden.bs.dropdown', function () {
             dropdown.querySelectorAll('.dropdown-submenu').forEach(submenu => {
@@ -196,5 +169,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 </script>
-
 

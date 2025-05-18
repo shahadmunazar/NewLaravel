@@ -150,5 +150,26 @@ class HomeController extends Controller
         return view('services.lighting.panel_light');
     }
 
+    public function embeddedSystems()
+{
+    return view('services.embedded_systems');
+}
+
+public function industrialAutomation()
+{
+    return view('services.industrial_automation');
+}
+
+public function softwareDevelopment()
+{
+    return view('services.software_development');
+}
+
+public function hvacSolutions()
+{
+    return view('services.hvac_solutions');
+}
+
+
     
 }

@@ -4,13 +4,10 @@
             <div class="col-lg-6 pt-5">
                 <div class="mt-5">
                     <!-- Section Heading -->
-                    <h1 class="display-6 text-white text-uppercase mb-4 wow fadeIn" data-wow-delay="0.3s">Why You Should Choose Our Welding Services</h1>
+                    <h1 class="display-6 text-white text-uppercase mb-4 wow fadeIn" data-wow-delay="0.3s">Why Choose TC Smart Technology?</h1>
 
                     <!-- Section Description -->
-                    <p class="text-light mb-4 wow fadeIn" data-wow-delay="0.4s">Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Curabitur tellus augue, iaculis id elit eget, ultrices pulvinar
-                        tortor. Quisque vel lorem porttitor, malesuada arcu quis, fringilla risus. Pellentesque eu
-                        consequat augue.</p>
+                    <p class="text-light mb-4 wow fadeIn" data-wow-delay="0.4s">Alongside our embedded expertise, we offer advanced industrial automation and robotics, complete HVAC system solutions, and custom software development. Whether you need a pick-and-place robot, a special-purpose machine (SPM), a conveyor automation system, or an intelligent school management platform, we’ve got you covered..</p>
 
                     <!-- Counter and Stats Section -->
                     <div class="row g-4 pt-2 mb-4">
